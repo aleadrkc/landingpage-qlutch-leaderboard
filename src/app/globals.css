@@ -1,18 +1,67 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #e6c84c;
-  --color-primary-foreground: #3d3d3d;
-  --color-muted: #f4f4f5;
-  --color-muted-foreground: #64748b;
+  --color-background: #ffffff;
+  --color-foreground: #262626;
   --color-card: #ffffff;
-  --color-card-foreground: #1a1a1a;
-  --color-border: #e4e4e7;
+  --color-card-foreground: #262626;
+  --color-primary: #ffd900;
+  --color-primary-foreground: #333333;
+  --color-secondary: #003366;
+  --color-secondary-foreground: #ffffff;
+  --color-muted: #f9fafb;
+  --color-muted-foreground: #6b7280;
+  --color-accent: #fffacc;
+  --color-accent-foreground: #92400e;
+  --color-border: #e5e7eb;
+  --color-input: #e5e7eb;
+  --color-ring: #f59e0b;
   --font-sans: "Inter", "Inter Fallback", sans-serif;
+  --radius: 0.7rem;
+  --shadow-color: #364153;
+  --shadow-2xs: 0px 4px 15px -1px #3641530d;
+  --shadow-xs: 0px 4px 15px -1px #3641530d;
+  --shadow-sm: 0px 4px 15px -1px #3641531a, 0px 1px 2px -2px #3641531a;
+  --shadow: 0px 4px 15px -1px #3641531a, 0px 1px 2px -2px #3641531a;
+  --shadow-md: 0px 4px 15px -1px #3641531a, 0px 2px 4px -2px #3641531a;
+  --shadow-lg: 0px 4px 15px -1px #3641531a, 0px 4px 6px -2px #3641531a;
+  --shadow-xl: 0px 4px 15px -1px #3641531a, 0px 8px 10px -2px #3641531a;
+  --shadow-2xl: 0px 4px 15px -1px #36415340;
+}
+
+.dark {
+  --color-background: #171717;
+  --color-foreground: #e5e5e5;
+  --color-card: #262626;
+  --color-card-foreground: #e5e5e5;
+  --color-primary: #f59e0b;
+  --color-primary-foreground: #000000;
+  --color-secondary: #262626;
+  --color-secondary-foreground: #e5e5e5;
+  --color-muted: #1f1f1f;
+  --color-muted-foreground: #a3a3a3;
+  --color-accent: #92400e;
+  --color-accent-foreground: #fde68a;
+  --color-border: #404040;
+  --color-input: #404040;
+  --color-ring: #f59e0b;
+  --shadow-color: #000000;
+  --shadow-2xs: 0px 4px 15px -1px #0000000d;
+  --shadow-xs: 0px 4px 15px -1px #0000000d;
+  --shadow-sm: 0px 4px 15px -1px #0000001a, 0px 1px 2px -2px #0000001a;
+  --shadow: 0px 4px 15px -1px #0000001a, 0px 1px 2px -2px #0000001a;
+  --shadow-md: 0px 4px 15px -1px #0000001a, 0px 2px 4px -2px #0000001a;
+  --shadow-lg: 0px 4px 15px -1px #0000001a, 0px 4px 6px -2px #0000001a;
+  --shadow-xl: 0px 4px 15px -1px #0000001a, 0px 8px 10px -2px #0000001a;
+  --shadow-2xl: 0px 4px 15px -1px #00000040;
 }
 
 body {
-  font-family: "Inter", "Inter Fallback", sans-serif;
-  background: #ffffff;
-  color: #1a1a1a;
+  font-family: var(--font-sans);
+  background: var(--color-background);
+  color: var(--color-foreground);
+}
+
+html {
+  scroll-behavior: smooth;
 }
