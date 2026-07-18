@@ -382,16 +382,16 @@ export default function HomePage() {
                 Your ultimate padel scoring partner. Track matches, analyze performance, and improve your game with comprehensive statistics and insights.
               </p>
               <div className="flex gap-3 md:gap-4 pt-1 md:pt-2">
-                <a href="#" className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-gray-800 hover:bg-primary text-gray-300 hover:text-primary-foreground flex items-center justify-center transition-colors duration-300" aria-label="Instagram">
+                <a href="https://www.instagram.com/qlutch.id" target="_blank" rel="noopener noreferrer" className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-gray-800 hover:bg-primary text-gray-300 hover:text-primary-foreground flex items-center justify-center transition-colors duration-300" aria-label="Instagram">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                 </a>
-                <a href="#" className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-gray-800 hover:bg-primary text-gray-300 hover:text-primary-foreground flex items-center justify-center transition-colors duration-300" aria-label="Twitter">
+                <a href="https://twitter.com/qlutch_id" target="_blank" rel="noopener noreferrer" className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-gray-800 hover:bg-primary text-gray-300 hover:text-primary-foreground flex items-center justify-center transition-colors duration-300" aria-label="Twitter">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
                 </a>
-                <a href="#" className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-gray-800 hover:bg-primary text-gray-300 hover:text-primary-foreground flex items-center justify-center transition-colors duration-300" aria-label="Facebook">
+                <a href="https://facebook.com/qlutch" target="_blank" rel="noopener noreferrer" className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-gray-800 hover:bg-primary text-gray-300 hover:text-primary-foreground flex items-center justify-center transition-colors duration-300" aria-label="Facebook">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                 </a>
-                <a href="#" className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-gray-800 hover:bg-primary text-gray-300 hover:text-primary-foreground flex items-center justify-center transition-colors duration-300" aria-label="Email">
+                <a href="mailto:support@qlutch.id" target="_blank" rel="noopener noreferrer" className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-gray-800 hover:bg-primary text-gray-300 hover:text-primary-foreground flex items-center justify-center transition-colors duration-300" aria-label="Email">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                 </a>
               </div>
@@ -399,26 +399,28 @@ export default function HomePage() {
             <div>
               <h3 className="font-semibold mb-3 text-white">Product</h3>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#" className="hover:text-primary transition-colors">Features</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Pricing</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">FAQ</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Download</a></li>
+                <li><a href="#features" className="hover:text-primary transition-colors">Features</a></li>
+                <li><a href="#pricing" className="hover:text-primary transition-colors">Pricing</a></li>
+                <li><a href="#faq" className="hover:text-primary transition-colors">FAQ</a></li>
+                <li><a href="/download" className="hover:text-primary transition-colors">Download</a></li>
+                <li><a href="/llms.txt" className="hover:text-primary transition-colors">AI Context (llms.txt)</a></li>
+                <li><a href="/pricing.md" className="hover:text-primary transition-colors">Pricing (Markdown)</a></li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold mb-3 text-white">Legal</h3>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Terms of Service</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Cookie Policy</a></li>
+                <li><a href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</a></li>
+                <li><a href="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</a></li>
+                <li><a href="#cookies" className="hover:text-primary transition-colors">Cookie Policy</a></li>
               </ul>
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-2 text-sm text-gray-500">
             <p>© 2026 Qlutch. All rights reserved. • Last Updated: June 2026</p>
             <div className="flex gap-4">
-              <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
+              <a href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</a>
+              <a href="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</a>
             </div>
           </div>
         </div>
