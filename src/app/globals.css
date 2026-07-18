@@ -29,33 +29,6 @@
   --shadow-2xl: 0px 4px 15px -1px #36415340;
 }
 
-.dark {
-  --color-background: #171717;
-  --color-foreground: #e5e5e5;
-  --color-card: #262626;
-  --color-card-foreground: #e5e5e5;
-  --color-primary: #f59e0b;
-  --color-primary-foreground: #000000;
-  --color-secondary: #262626;
-  --color-secondary-foreground: #e5e5e5;
-  --color-muted: #1f1f1f;
-  --color-muted-foreground: #a3a3a3;
-  --color-accent: #92400e;
-  --color-accent-foreground: #fde68a;
-  --color-border: #404040;
-  --color-input: #404040;
-  --color-ring: #f59e0b;
-  --shadow-color: #000000;
-  --shadow-2xs: 0px 4px 15px -1px #0000000d;
-  --shadow-xs: 0px 4px 15px -1px #0000000d;
-  --shadow-sm: 0px 4px 15px -1px #0000001a, 0px 1px 2px -2px #0000001a;
-  --shadow: 0px 4px 15px -1px #0000001a, 0px 1px 2px -2px #0000001a;
-  --shadow-md: 0px 4px 15px -1px #0000001a, 0px 2px 4px -2px #0000001a;
-  --shadow-lg: 0px 4px 15px -1px #0000001a, 0px 4px 6px -2px #0000001a;
-  --shadow-xl: 0px 4px 15px -1px #0000001a, 0px 8px 10px -2px #0000001a;
-  --shadow-2xl: 0px 4px 15px -1px #00000040;
-}
-
 body {
   font-family: var(--font-sans);
   background: var(--color-background);
