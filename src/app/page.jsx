@@ -94,7 +94,7 @@ export default function HomePage() {
           <div
             className={`mx-auto flex items-center justify-between transition-all duration-300 ${
               scrolled
-                ? "max-w-5xl bg-white dark:bg-zinc-900 rounded-full shadow-lg border border-transparent dark:border-zinc-800 px-4 sm:px-6 py-4"
+                ? "max-w-5xl bg-white rounded-full shadow-lg border border-transparent px-4 sm:px-6 py-4"
                 : "container py-2 px-4"
             }`}
           >
@@ -104,26 +104,18 @@ export default function HomePage() {
                 src="./images/qlutch-logo-black.png"
                 width={120}
                 height={40}
-                className="h-10 w-auto transition-all duration-300 dark:hidden"
-                unoptimized
-              />
-              <Image
-                alt="Qlutch Logo"
-                src="./images/qlutch-logo-white.png"
-                width={120}
-                height={40}
-                className="h-10 w-auto transition-all duration-300 hidden dark:block"
+                className="h-10 w-auto transition-all duration-300"
                 unoptimized
               />
             </a>
             <nav className="hidden md:flex gap-8">
-              <button className="font-medium transition-all duration-300 hover:text-primary hover:scale-110 cursor-pointer bg-transparent border-none p-0 text-black dark:text-white">
+              <button className="font-medium transition-all duration-300 hover:text-primary hover:scale-110 cursor-pointer bg-transparent border-none p-0 text-black">
                 Features
               </button>
-              <button className="font-medium transition-all duration-300 hover:text-primary hover:scale-110 cursor-pointer bg-transparent border-none p-0 text-black dark:text-white">
+              <button className="font-medium transition-all duration-300 hover:text-primary hover:scale-110 cursor-pointer bg-transparent border-none p-0 text-black">
                 Pricing
               </button>
-              <button className="font-medium transition-all duration-300 hover:text-primary hover:scale-110 cursor-pointer bg-transparent border-none p-0 text-black dark:text-white">
+              <button className="font-medium transition-all duration-300 hover:text-primary hover:scale-110 cursor-pointer bg-transparent border-none p-0 text-black">
                 FAQ
               </button>
             </nav>
@@ -136,7 +128,7 @@ export default function HomePage() {
               </a>
             </div>
             <button
-              className="md:hidden p-2 rounded-lg transition-all duration-300 text-black dark:text-white hover:bg-black/10 dark:hover:bg-white/10"
+              className="md:hidden p-2 rounded-lg transition-all duration-300 text-black hover:bg-black/10"
               aria-label="Toggle menu"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
@@ -146,10 +138,10 @@ export default function HomePage() {
         </div>
         {/* Mobile menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden bg-white dark:bg-zinc-900 border-t dark:border-zinc-800 shadow-lg mx-4 rounded-lg mt-2 p-4 flex flex-col gap-3">
-            <button className="font-medium text-black dark:text-white text-left bg-transparent border-none p-0 cursor-pointer">Features</button>
-            <button className="font-medium text-black dark:text-white text-left bg-transparent border-none p-0 cursor-pointer">Pricing</button>
-            <button className="font-medium text-black dark:text-white text-left bg-transparent border-none p-0 cursor-pointer">FAQ</button>
+          <div className="md:hidden bg-white border-t shadow-lg mx-4 rounded-lg mt-2 p-4 flex flex-col gap-3">
+            <button className="font-medium text-black text-left bg-transparent border-none p-0 cursor-pointer">Features</button>
+            <button className="font-medium text-black text-left bg-transparent border-none p-0 cursor-pointer">Pricing</button>
+            <button className="font-medium text-black text-left bg-transparent border-none p-0 cursor-pointer">FAQ</button>
             <a href="/download" className="inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-4 py-2 transition-all duration-300 w-fit">
               Download Apps
             </a>
