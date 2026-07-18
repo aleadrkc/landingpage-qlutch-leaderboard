@@ -129,11 +129,11 @@ export default function HomePage() {
           </div>
 
           {/* Match Information Card */}
-          <div className="bg-white rounded-xl border border-gray-200 shadow-sm mb-6">
-            <div className="p-6 pb-4">
+          <div className="bg-white flex flex-col gap-6 rounded-2xl border-none py-6 shadow-[0_4px_15px_-1px_rgba(54,65,83,0.1)] mb-6">
+            <div className="px-6">
               <div className="flex items-start justify-between">
-                <h2 className="font-semibold text-lg sm:text-xl">Match Information</h2>
-                <span className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium border border-amber-500/20 bg-amber-50 text-amber-600">
+                <h2 className="leading-none font-semibold text-lg sm:text-xl">Match Information</h2>
+                <span className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium border border-amber-500/20 bg-amber-500/10 text-amber-600">
                   In Progress
                 </span>
               </div>
@@ -191,7 +191,7 @@ export default function HomePage() {
           </div>
 
           {/* Standings */}
-          <div className="bg-white rounded-xl border border-gray-200 shadow-sm mb-6">
+          <div className="bg-white flex flex-col gap-6 rounded-2xl border-none py-6 shadow-[0_4px_15px_-1px_rgba(54,65,83,0.1)] mb-6">
             <button
               onClick={() => setStandingsOpen(!standingsOpen)}
               className="w-full cursor-pointer hover:bg-gray-50 p-6 pb-2 rounded-t-xl text-left"
@@ -299,7 +299,7 @@ export default function HomePage() {
           </div>
 
           {/* Match Results */}
-          <div className="bg-white rounded-xl border border-gray-200 shadow-sm mt-6">
+          <div className="bg-white flex flex-col gap-6 rounded-2xl border-none py-6 shadow-[0_4px_15px_-1px_rgba(54,65,83,0.1)] mt-6">
             <button
               onClick={() => setResultsOpen(!resultsOpen)}
               className="w-full cursor-pointer hover:bg-gray-50 p-6 rounded-t-xl text-left"
