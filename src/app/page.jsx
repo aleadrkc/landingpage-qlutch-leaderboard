@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import {
   Search,
   ChevronDown,
@@ -68,10 +69,13 @@ export default function HomePage() {
       <header className="fixed top-0 left-0 right-0 z-50 mt-4">
         <div className="mx-auto flex items-center justify-between container py-2 px-4">
           <a href="/" className="flex items-center">
-            <img
+            <Image
               alt="Qlutch Logo"
-              src="/images/qlutch-logo-black.png"
+              src="./images/qlutch-logo-black.png"
+              width={120}
+              height={40}
               className="h-10 w-auto"
+              unoptimized
             />
           </a>
           <nav className="hidden md:flex gap-8">
