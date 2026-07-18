@@ -105,7 +105,6 @@ export default function HomePage() {
                 width={120}
                 height={40}
                 className="h-10 w-auto transition-all duration-300 dark:hidden"
-                style={{ width: "auto", height: "auto" }}
                 unoptimized
               />
               <Image
@@ -114,7 +113,6 @@ export default function HomePage() {
                 width={120}
                 height={40}
                 className="h-10 w-auto transition-all duration-300 hidden dark:block"
-                style={{ width: "auto", height: "auto" }}
                 unoptimized
               />
             </a>
