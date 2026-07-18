@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import {
   Search,
@@ -71,6 +71,16 @@ export default function HomePage() {
   const [standingsOpen, setStandingsOpen] = useState(true);
   const [resultsOpen, setResultsOpen] = useState(true);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const filtered = players.filter((p) =>
     p.team.toLowerCase().includes(search.toLowerCase())
@@ -81,7 +91,13 @@ export default function HomePage() {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 mt-4">
         <div className="mobile-menu-container">
-          <div className="mx-auto flex items-center justify-between transition-all duration-300 container py-2 px-4">
+          <div
+            className={`mx-auto flex items-center justify-between transition-all duration-300 ${
+              scrolled
+                ? "max-w-5xl bg-white dark:bg-zinc-900 rounded-full shadow-lg border border-transparent dark:border-zinc-800 px-4 sm:px-6 py-4"
+                : "container py-2 px-4"
+            }`}
+          >
             <a href="/" className="transition-all duration-300 flex items-center">
               <Image
                 alt="Qlutch Logo"
